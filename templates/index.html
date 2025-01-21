@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VisionForge - Professional AI Image Creation</title>
+    <meta name="description" content="Create stunning, professional-grade images using advanced AI technology with VisionForge. Transform your ideas into beautiful artwork instantly.">
+    <meta name="keywords" content="AI image generation, artificial intelligence art, professional image creation, VisionForge">
+    <meta name="author" content="VisionForge">
+    <meta property="og:title" content="VisionForge - Professional AI Image Creation">
+    <meta property="og:description" content="Create stunning, professional-grade images using advanced AI technology">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen text-gray-800 dark:text-white">
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="VisionForge Logo" class="splash-logo">
+    </div>
+
+    <!-- Background Shapes -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="glass-nav px-4 py-3">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <a href="/" class="flex items-center space-x-3 flex-shrink-0">
+                    <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="VisionForge Logo" class="h-8 w-8">
+                    <span class="text-lg md:text-xl font-bold text-white whitespace-nowrap">VisionForge</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="nav-link text-sm md:text-base">Home</a>
+                    <a href="#features" class="nav-link text-sm md:text-base">Features</a>
+                    <a href="#generator" class="nav-link text-sm md:text-base">Create</a>
+                    <a href="#latest-creations" class="nav-link text-sm md:text-base">Gallery</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden glass-button p-1.5 rounded-lg focus:outline-none flex-shrink-0 ml-2 w-8 h-8 flex items-center justify-center">
+                    <i class="fas fa-bars text-white text-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="glass-nav px-4 py-4 space-y-4">
+                <a href="#home" class="mobile-nav-link block text-white text-center">Home</a>
+                <a href="#features" class="mobile-nav-link block text-white text-center">Features</a>
+                <a href="#generator" class="mobile-nav-link block text-white text-center">Create</a>
+                <a href="#latest-creations" class="mobile-nav-link block text-white text-center">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 md:pt-16 px-4">
+        <div class="relative max-w-4xl mx-auto text-center">
+            <div class="glass-card rounded-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Transform Your Ideas Into Art
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl text-white/90 mb-8">
+                    Create stunning, unique images using advanced AI technology
+                </p>
+                <a href="#generator" class="glass-button inline-flex items-center px-8 py-4 rounded-full text-white font-semibold">
+                    Start Creating
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-16">
+                Why Choose VisionForge?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card">
+                    <div class="glass-card p-6 rounded-2xl h-full">
+                        <div class="w-12 h-12 glass-icon rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-wand-magic-sparkles text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Advanced AI</h3>
+                        <p class="text-white/80">Powered by state-of-the-art AI models for stunning results</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="glass-card p-6 rounded-2xl h-full">
+                        <div class="w-12 h-12 glass-icon rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-bolt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Lightning Fast</h3>
+                        <p class="text-white/80">Generate high-quality images in seconds with our optimized infrastructure</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="glass-card p-6 rounded-2xl h-full">
+                        <div class="w-12 h-12 glass-icon rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-shield-halved text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Secure & Private</h3>
+                        <p class="text-white/80">Your prompts and generated images are protected with enterprise-grade security</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="glass-card p-6 rounded-2xl h-full">
+                        <div class="w-12 h-12 glass-icon rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-arrows-rotate text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Unlimited Generations</h3>
+                        <p class="text-white/80">Create as many images as you want with no daily limits or restrictions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="generator" class="py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Create Your Image</h2>
+                <div class="space-y-6">
+                    <div class="relative">
+                        <div id="message" class="fixed top-4 right-4 p-4 rounded-lg text-white hidden"></div>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="flex-1 relative">
+                                <i class="fas fa-lightbulb absolute left-4 top-1/2 -translate-y-1/2 text-white/50"></i>
+                                <input type="text" 
+                                    id="prompt-input" 
+                                    class="glass-input w-full pl-12 pr-4 py-4 rounded-xl text-black"
+                                    placeholder="Describe the image you want to create..."
+                                    autocomplete="off">
+                            </div>
+                            <button id="generate-btn" 
+                                    class="glass-button px-8 py-4 rounded-xl flex items-center justify-center space-x-2 min-w-[160px]">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                                <span>Generate</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="text-sm text-white/80 py-2">Try:</span>
+                        <button class="suggestion-chip glass-chip px-4 py-2 rounded-full" data-prompt="A serene mountain landscape at sunset with a crystal-clear lake">
+                            <i class="fas fa-mountain mr-2"></i>
+                            Mountain Sunset
+                        </button>
+                        <button class="suggestion-chip glass-chip px-4 py-2 rounded-full" data-prompt="A futuristic cyberpunk city with neon lights and flying vehicles">
+                            <i class="fas fa-city mr-2"></i>
+                            Cyberpunk City
+                        </button>
+                        <button class="suggestion-chip glass-chip px-4 py-2 rounded-full" data-prompt="A magical forest with glowing mushrooms and fairy lights">
+                            <i class="fas fa-tree mr-2"></i>
+                            Enchanted Forest
+                        </button>
+                    </div>
+
+                    <div id="result" class="mt-8 hidden">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <div class="image-container rounded-lg overflow-hidden mb-4">
+                                <img id="generated-image" 
+                                     src="" 
+                                     alt="Generated Image" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex justify-end space-x-4">
+                                <button id="download-btn" class="glass-button px-6 py-3 rounded-xl flex items-center space-x-2">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-creations" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Latest Creations</h2>
+            <div id="latest-images-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {% for image in latest_images %}
+                <div class="glass-card p-4 rounded-xl hover:scale-105 transition-transform duration-300">
+                    <div class="image-container rounded-lg overflow-hidden mb-4">
+                        <img src="{{ image.url }}" 
+                             alt="{{ image.prompt }}" 
+                             class="w-full h-full object-cover"
+                             loading="lazy">
+                    </div>
+                    <div class="space-y-3">
+                        <p class="prompt-text text-white/90 text-sm">{{ image.prompt }}</p>
+                        <div class="tag-container">
+                            <span class="glass-chip text-xs px-2 py-1 text-white/80">{{ image.category }}</span>
+                            {% for tag in image.tags[:2] %}
+                            <span class="glass-chip text-xs px-2 py-1 text-white/80">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-white/60 text-xs">{{ image.timestamp.split('T')[0] }}</p>
+                            <div class="image-actions">
+                                <button class="like-button text-white/60 hover:text-pink-500 transition-colors" 
+                                        onclick="likeImage('{{ image.id }}')"
+                                        data-likes="{{ image.metadata.likes }}">
+                                    <i class="fas fa-heart"></i>
+                                    <span class="text-xs ml-1 like-count">{{ image.metadata.likes }}</span>
+                                </button>
+                                <a href="{{ image.url }}" 
+                                   download 
+                                   class="text-white/60 hover:text-white transition-colors"
+                                   onclick="incrementDownloads('{{ image.id }}')">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="pagination-controls" class="flex justify-center items-center space-x-2 mt-8">
+                <button id="prev-page" class="glass-button px-4 py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div id="page-numbers" class="flex items-center space-x-2">
+                    <!-- Page numbers will be inserted here -->
+                </div>
+                <button id="next-page" class="glass-button px-4 py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <button id="theme-toggle" class="fixed bottom-4 right-4 glass-icon-button z-50">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+    </button>
+
+    <footer class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <a href="/" class="inline-block">
+                    <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="VisionForge Logo" class="h-12 mx-auto mb-4">
+                </a>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#create" class="footer-link">Create</a>
+                    <a href="#latest-creations" class="footer-link">Gallery</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-white/60">
+                <p>Developed with <i class="fas fa-heart text-red-500 animate-pulse"></i> by Ali Khan Jalbani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+{
+    "metadata": {
+        "app_name": "VisionForge",
+        "version": "1.0",
+        "last_updated": "2025-01-21T05:34:45.338312"
+    },
+    "categories": {
+        "landscape": [
+            "mountain",
+            "forest",
+            "lake",
+            "sunset"
+        ],
+        "urban": [
+            "cyberpunk",
+            "city",
+            "futuristic"
+        ],
+        "fantasy": [
+            "magical",
+            "fairy",
+            "glowing"
+        ]
+    },
+    "images": [
+        {
+            "id": "c52ad0f7",
+            "url": "https://files.shapes.inc/c52ad0f7.png",
+            "prompt": "a school boy",
+            "timestamp": "2025-01-21T05:34:45.338220",
+            "category": "other",
+            "tags": [],
+            "metadata": {
+                "likes": 9,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "d0c8db67",
+            "url": "https://files.shapes.inc/d0c8db67.png",
+            "prompt": "a boy with bag and bat",
+            "timestamp": "2025-01-21T05:32:05.634643",
+            "category": "other",
+            "tags": [],
+            "metadata": {
+                "likes": 1,
+                "downloads": 2
+            }
+        },
+        {
+            "id": "bf183c34",
+            "url": "https://files.shapes.inc/bf183c34.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T05:30:16.886589",
+            "category": "fantasy",
+            "tags": [
+                "magical",
+                "fairy",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 1,
+                "downloads": 1
+            }
+        },
+        {
+            "id": "07d14e99",
+            "url": "https://files.shapes.inc/07d14e99.png",
+            "prompt": "A serene mountain landscape at sunset with a crystal-clear lake",
+            "timestamp": "2025-01-21T03:50:20.162730",
+            "category": "landscape",
+            "tags": [
+                "mountain",
+                "lake",
+                "sunset"
+            ],
+            "metadata": {
+                "likes": 2,
+                "downloads": 3
+            }
+        },
+        {
+            "id": "ea9465a4",
+            "url": "https://files.shapes.inc/ea9465a4.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T03:47:43.294660",
+            "category": "fantasy",
+            "tags": [
+                "magical",
+                "fairy",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 2,
+                "downloads": 2
+            }
+        },
+        {
+            "id": "831cdf96",
+            "url": "https://files.shapes.inc/831cdf96.png",
+            "prompt": "a Boy With a bag and bat",
+            "timestamp": "2025-01-21T03:17:00.072488",
+            "category": "other",
+            "tags": [],
+            "metadata": {
+                "likes": 8,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "320713b2",
+            "url": "https://files.shapes.inc/320713b2.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T03:07:53.917906",
+            "category": "fantasy",
+            "tags": [
+                "magical",
+                "fairy",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 1,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "52d8b06d",
+            "url": "https://files.shapes.inc/52d8b06d.png",
+            "prompt": "A serene mountain landscape at sunset with a crystal-clear lake",
+            "timestamp": "2025-01-21T02:47:01.689380",
+            "category": "landscape",
+            "tags": [
+                "mountain",
+                "sunset",
+                "lake"
+            ],
+            "metadata": {
+                "likes": 1,
+                "downloads": 1
+            }
+        },
+        {
+            "id": "bfea21a1",
+            "url": "https://files.shapes.inc/bfea21a1.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T02:39:49.321971",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 27,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "09b64397",
+            "url": "https://files.shapes.inc/09b64397.png",
+            "prompt": "A futuristic cyberpunk city with neon lights and flying vehicles",
+            "timestamp": "2025-01-21T02:38:15.713087",
+            "category": "urban",
+            "tags": [
+                "cyberpunk",
+                "city",
+                "futuristic"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "e3664805",
+            "url": "https://files.shapes.inc/e3664805.png",
+            "prompt": "A futuristic cyberpunk city with neon lights and flying vehicles",
+            "timestamp": "2025-01-21T02:24:18.023370",
+            "category": "urban",
+            "tags": [
+                "cyberpunk",
+                "city",
+                "futuristic"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "b13dc0d6",
+            "url": "https://files.shapes.inc/b13dc0d6.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T02:06:46.081995",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "b6bf76c0",
+            "url": "https://files.shapes.inc/b6bf76c0.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T01:45:15.962640",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "d9b40e50",
+            "url": "https://files.shapes.inc/d9b40e50.png",
+            "prompt": "A futuristic cyberpunk city with neon lights and flying vehicles",
+            "timestamp": "2025-01-21T01:40:35.801288",
+            "category": "urban",
+            "tags": [
+                "cyberpunk",
+                "city",
+                "futuristic"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "0b1b9d54",
+            "url": "https://files.shapes.inc/0b1b9d54.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T01:27:26.559156",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "18c97e7e",
+            "url": "https://files.shapes.inc/18c97e7e.png",
+            "prompt": "A serene mountain landscape at sunset with a crystal-clear lake",
+            "timestamp": "2025-01-21T01:11:24.690618",
+            "category": "landscape",
+            "tags": [
+                "mountain",
+                "sunset",
+                "lake"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "05cb7e74",
+            "url": "https://files.shapes.inc/05cb7e74.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T01:11:08.162912",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "e5f73480",
+            "url": "https://files.shapes.inc/e5f73480.png",
+            "prompt": "A magical forest with glowing mushrooms and fairy lights",
+            "timestamp": "2025-01-21T01:10:48.913999",
+            "category": "fantasy",
+            "tags": [
+                "forest",
+                "magical",
+                "glowing"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        }
+    ],
+    "stats": {
+        "total_images": 18,
+        "total_categories": 3,
+        "popular_tags": [
+            "magical",
+            "glowing",
+            "forest"
+        ]
+    }
+}
