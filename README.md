@@ -87,6 +87,7 @@ Access the application at `http://localhost:5000`
 Vision-ForGe/
 ├── 📄 app.py                # Application core
 ├── 📄 requirements.txt      # Dependencies
+├── 📄 .env                  # API
 ├── 📂 static/              # Static assets
 │   ├── 📂 css/            # Styling
 │   ├── 📂 js/             # Scripts
