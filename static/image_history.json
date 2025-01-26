@@ -2,7 +2,7 @@
     "metadata": {
         "app_name": "VisionForge",
         "version": "1.0",
-        "last_updated": "2025-01-21T05:34:45.338312"
+        "last_updated": "2025-01-23T19:52:55.383303"
     },
     "categories": {
         "landscape": [
@@ -23,6 +23,54 @@
         ]
     },
     "images": [
+        {
+            "id": "d9c22a50",
+            "url": "https://files.shapes.inc/d9c22a50.png",
+            "prompt": "A futuristic cyberpunk city with neon lights and flying vehicles",
+            "timestamp": "2025-01-23T19:52:55.383284",
+            "category": "urban",
+            "tags": [
+                "cyberpunk",
+                "city",
+                "futuristic"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "eb6a32cd",
+            "url": "https://files.shapes.inc/eb6a32cd.png",
+            "prompt": "A futuristic cyberpunk city with neon lights and flying vehicles",
+            "timestamp": "2025-01-23T18:05:47.538602",
+            "category": "urban",
+            "tags": [
+                "cyberpunk",
+                "city",
+                "futuristic"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
+        {
+            "id": "b76efab1",
+            "url": "https://files.shapes.inc/b76efab1.png",
+            "prompt": "A serene mountain landscape at sunset with a crystal-clear lake",
+            "timestamp": "2025-01-23T18:04:42.207009",
+            "category": "landscape",
+            "tags": [
+                "mountain",
+                "lake",
+                "sunset"
+            ],
+            "metadata": {
+                "likes": 0,
+                "downloads": 0
+            }
+        },
         {
             "id": "c52ad0f7",
             "url": "https://files.shapes.inc/c52ad0f7.png",
@@ -301,7 +349,7 @@
         }
     ],
     "stats": {
-        "total_images": 18,
+        "total_images": 21,
         "total_categories": 3,
         "popular_tags": [
             "magical",

@@ -128,8 +128,8 @@ def save_image_locally(image_url):
 
 # Initialize OpenAI client
 client = OpenAI(
-    api_key=os.getenv('OPENAI_API_KEY', "your_api_key_here"),
-    base_url=os.getenv('OPENAI_BASE_URL', "server_url")
+    api_key=os.getenv('OPENAI_API_KEY'),
+    base_url=os.getenv('OPENAI_BASE_URL')
 )
 
 @app.route('/')
